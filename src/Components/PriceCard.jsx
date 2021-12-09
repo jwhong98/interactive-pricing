@@ -7,11 +7,12 @@ const PriceCard = () => {
     return (
         <div className="price-container">
             <div className="top-wrap">
-                <h3 id="price-header">100k pageviews</h3>
+                <div id="price-header">
+                    <h3>100k pageviews</h3>
+                </div>
                 <div className="slider-wrap">
                     <Slider  
-                        defaultValue={50}
-                        
+                        defaultValue={50}  
                     />
                 </div>
                 <div className="price-wrap">
@@ -22,7 +23,7 @@ const PriceCard = () => {
                     <p className="label">Monthly Billing</p>
                     <Switch />
                     <p className="label">Yearly Billing</p>
-                    <span className="discount">-25%</span>
+                    <span className="discount">-25% <span className="discount-label">discount</span></span>
                 </div>
             </div>
             <div className="bottom-wrap">
